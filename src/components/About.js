@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { toast } from "react-toastify";
+
 const aboutStyles = {
   container: {
     backgroundColor: "#f0f0f0",
@@ -26,6 +26,9 @@ const aboutStyles = {
 };
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About || Courses Application"
+  }, []);
 
   return (
     <div style={aboutStyles.container}>
